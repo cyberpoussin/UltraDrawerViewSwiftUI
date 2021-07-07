@@ -3,23 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84468C45269447E20081E6DE /* DeviceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84468C44269447E20081E6DE /* DeviceOrientation.swift */; };
 		8469DF702603EE4800F600E3 /* UltraDrawerViewSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469DF6F2603EE4800F600E3 /* UltraDrawerViewSwiftUIApp.swift */; };
 		8469DF722603EE4800F600E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469DF712603EE4800F600E3 /* ContentView.swift */; };
 		8469DF742603EE4B00F600E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8469DF732603EE4B00F600E3 /* Assets.xcassets */; };
 		8469DF772603EE4B00F600E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8469DF762603EE4B00F600E3 /* Preview Assets.xcassets */; };
+		8469DF812603EF0A00F600E3 /* UltraDrawerView in Frameworks */ = {isa = PBXBuildFile; productRef = 8469DF802603EF0A00F600E3 /* UltraDrawerView */; };
+		8469DF842603EF1E00F600E3 /* DrawerViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469DF832603EF1E00F600E3 /* DrawerViewRepresentable.swift */; };
+		8469DF872604072D00F600E3 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469DF862604072D00F600E3 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84468C44269447E20081E6DE /* DeviceOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOrientation.swift; sourceTree = "<group>"; };
+		84468C462694485B0081E6DE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8469DF6C2603EE4800F600E3 /* UltraDrawerViewSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltraDrawerViewSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8469DF6F2603EE4800F600E3 /* UltraDrawerViewSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltraDrawerViewSwiftUIApp.swift; sourceTree = "<group>"; };
 		8469DF712603EE4800F600E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8469DF732603EE4B00F600E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8469DF762603EE4B00F600E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8469DF782603EE4B00F600E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8469DF832603EF1E00F600E3 /* DrawerViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewRepresentable.swift; sourceTree = "<group>"; };
+		8469DF862604072D00F600E3 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8469DF812603EF0A00F600E3 /* UltraDrawerView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +45,7 @@
 		8469DF632603EE4800F600E3 = {
 			isa = PBXGroup;
 			children = (
+				84468C462694485B0081E6DE /* README.md */,
 				8469DF6E2603EE4800F600E3 /* UltraDrawerViewSwiftUI */,
 				8469DF6D2603EE4800F600E3 /* Products */,
 			);
@@ -54,6 +64,9 @@
 			children = (
 				8469DF6F2603EE4800F600E3 /* UltraDrawerViewSwiftUIApp.swift */,
 				8469DF712603EE4800F600E3 /* ContentView.swift */,
+				8469DF862604072D00F600E3 /* SwiftUIView.swift */,
+				8469DF832603EF1E00F600E3 /* DrawerViewRepresentable.swift */,
+				84468C44269447E20081E6DE /* DeviceOrientation.swift */,
 				8469DF732603EE4B00F600E3 /* Assets.xcassets */,
 				8469DF782603EE4B00F600E3 /* Info.plist */,
 				8469DF752603EE4B00F600E3 /* Preview Content */,
@@ -85,6 +98,9 @@
 			dependencies = (
 			);
 			name = UltraDrawerViewSwiftUI;
+			packageProductDependencies = (
+				8469DF802603EF0A00F600E3 /* UltraDrawerView */,
+			);
 			productName = UltraDrawerViewSwiftUI;
 			productReference = 8469DF6C2603EE4800F600E3 /* UltraDrawerViewSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 8469DF632603EE4800F600E3;
+			packageReferences = (
+				8469DF7F2603EF0A00F600E3 /* XCRemoteSwiftPackageReference "UltraDrawerView" */,
+			);
 			productRefGroup = 8469DF6D2603EE4800F600E3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84468C45269447E20081E6DE /* DeviceOrientation.swift in Sources */,
 				8469DF722603EE4800F600E3 /* ContentView.swift in Sources */,
+				8469DF842603EF1E00F600E3 /* DrawerViewRepresentable.swift in Sources */,
+				8469DF872604072D00F600E3 /* SwiftUIView.swift in Sources */,
 				8469DF702603EE4800F600E3 /* UltraDrawerViewSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8469DF7F2603EF0A00F600E3 /* XCRemoteSwiftPackageReference "UltraDrawerView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/super-ultra/UltraDrawerView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8469DF802603EF0A00F600E3 /* UltraDrawerView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8469DF7F2603EF0A00F600E3 /* XCRemoteSwiftPackageReference "UltraDrawerView" */;
+			productName = UltraDrawerView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8469DF642603EE4800F600E3 /* Project object */;
 }
