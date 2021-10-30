@@ -5,8 +5,8 @@
 //  Created by Admin on 06/07/2021.
 //
 
-import Foundation
-
+import SwiftUI
+import Combine
 final class DeviceOrientation: ObservableObject {
       enum Orientation {
         case portrait
